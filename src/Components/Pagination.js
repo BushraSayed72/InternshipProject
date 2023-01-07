@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 
 function Pagination() {
     const pages = 3 
@@ -15,19 +16,20 @@ function Pagination() {
    }, [currentButton])
   return (
     <div className='pagination-container'>
-    <a to='!#' className=''
+    <Link to='/Blogs1' className='pagination-color'
     onClick={ ()=> setCurrentButton((prev) => prev === 1 ? prev : prev - 1) }
-    >Prev </a>
+    >Prev  </Link>
     {numberOfPages.map(page =>{
         return (
-            <a
+            <Link
             onClick={() => setCurrentButton(page)}
-             href='!#' className={currentButton === page && 'active'}>{page}</a>
+             to='/Blogs1' className={currentButton === page && 'active'}>{page}</Link>
         )
     })}
-    <a
-     href='!#'
-     onClick={ ()=> setCurrentButton((prev) => prev === numberOfPages.length ? prev : prev  + 1) }>Next</a>
+    <Link
+     to='/Blogs2'
+     onClick={ ()=> setCurrentButton((prev) => prev === numberOfPages.length ? prev : prev  + 1 ) }>Next</Link>
+      
      
     </div>
   )

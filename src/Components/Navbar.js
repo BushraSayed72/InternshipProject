@@ -18,7 +18,7 @@ function Navbar() {
             <li>
             <a href='https://www.codekaroyaaro.com/little-coders-gallery' className='nav-links'>li'l Coders</a></li>
             <li> 
-            <Link className='nav-links' to='/Blogs'> Blogs</Link></li>
+            <Link className='nav-links' to='/Blogs1'> Blogs</Link></li>
         </ul>
         <button className='btn'> <a href='#' className='btn-link' > Book free Trail</a></button>
         <button className='btn'> <a href='#' className='btn-link'>Join Course</a></button>
