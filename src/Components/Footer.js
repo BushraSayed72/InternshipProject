@@ -57,7 +57,7 @@ function Footer() {
 
       
     </div>
-    <hr/>
+    <hr className='footerHr'/>
     <p className='cpyright'>Copyright ©2023 All rights reserved | The site is made with love by Bushra Sayed</p>
     </>
   )

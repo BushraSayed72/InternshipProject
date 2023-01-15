@@ -11,7 +11,7 @@ import nine from '../CardImages/9image.png'
 import Pagination from './Pagination'
 
 
-function Blogs() {
+function Blogs1() {
   return (
     <div className='blogs'>
     <h1> Blogs </h1>
@@ -97,4 +97,4 @@ function Blogs() {
   )
 }
 
-export default Blogs
+export default Blogs1
